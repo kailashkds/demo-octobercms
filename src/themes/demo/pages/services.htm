@@ -1,0 +1,36 @@
+##
+title = "Our Services"
+url = "/services"
+layout = "default"
+meta_title = "Our Services"
+
+[collection services]
+handle = "Services\Service"
+
+[resources]
+css[] = "pages/services.css"
+vars[activeNavLink] = 'services'
+==
+{% set allServices = services.get() %}
+<div class="page-services">
+    <div class="container my-5 py-4">
+        <div class="text-center mb-5">
+            <h1>Our Services</h1>
+            <p class="lead">We deliver end-to-end solutions tailored to your business needs.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {% for service in allServices %}
+                {% partial 'services/service-card' service=service %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="services-cta">
+        <div class="container text-center py-5">
+            <h3>Need a custom solution?</h3>
+            <p class="lead">Let's discuss how we can help your business grow.</p>
+            <a href="{{ 'contact'|page }}" class="btn btn-primary btn-lg btn-pill">Get In Touch</a>
+        </div>
+    </div>
+</div>

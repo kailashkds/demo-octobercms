@@ -1,0 +1,53 @@
+uuid: f47ac10b-58cc-4372-a567-0e02b2c3d479
+handle: Services\Service
+type: stream
+name: Service
+drafts: false
+
+customMessages:
+    buttonCreate: New Service
+
+primaryNavigation:
+    label: Services
+    icon: octo-icon-star
+    order: 90
+
+navigation:
+    label: All Services
+    icon: octo-icon-star
+    order: 100
+
+fields:
+    description:
+        tab: Edit
+        label: Short Description
+        type: textarea
+        span: adaptive
+
+    content:
+        tab: Edit
+        label: Full Description
+        type: richeditor
+        span: adaptive
+
+    icon_class:
+        tab: Edit
+        label: Icon CSS Class
+        type: text
+        span: left
+        comment: "Bootstrap icon class (e.g. bi-gear, bi-code-slash)"
+        default: bi-star
+
+    is_featured:
+        tab: Edit
+        label: Featured Service
+        type: switch
+        span: right
+        comment: "Show this service on the homepage"
+
+    banner:
+        tab: Media
+        label: Banner Image
+        type: mediafinder
+        mode: image
+        span: left

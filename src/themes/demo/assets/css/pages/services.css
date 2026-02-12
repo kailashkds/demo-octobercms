@@ -1,0 +1,46 @@
+.page-services {
+    padding-top: 2rem;
+}
+
+.service-card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12) !important;
+}
+
+.service-icon-banner {
+    height: 180px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.service-card .card-body {
+    padding: 1.5rem;
+}
+
+.service-card .card-title {
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.service-card .card-text {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.services-cta {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: #fff;
+    margin-top: 3rem;
+}
+
+.services-cta .lead {
+    opacity: 0.85;
+}

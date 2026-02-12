@@ -1,0 +1,18 @@
+<div class="col">
+    <div class="card service-card h-100 shadow-sm">
+        {% if service.banner %}
+            <img src="{{ service.banner|media }}" class="card-img-top" alt="{{ service.title }}" />
+        {% else %}
+            <div class="card-img-top service-icon-banner d-flex align-items-center justify-content-center">
+                <i class="bi {{ service.icon_class|default('bi-star') }}"></i>
+            </div>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title">{{ service.title }}</h5>
+            <p class="card-text">{{ service.description }}</p>
+            {% if service.is_featured %}
+                <span class="badge bg-primary">Featured</span>
+            {% endif %}
+        </div>
+    </div>
+</div>
