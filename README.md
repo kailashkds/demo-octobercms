@@ -20,7 +20,7 @@ A Dockerized [October CMS](https://octobercms.com) (v3.x) project running on PHP
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/kailashkds/demo-octobercms
    cd octomberCms
    ```
 
